@@ -1,0 +1,14 @@
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\bin\Debug\net8.0\C-Sharp.exe
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\bin\Debug\net8.0\C-Sharp.deps.json
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\bin\Debug\net8.0\C-Sharp.runtimeconfig.json
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\bin\Debug\net8.0\C-Sharp.dll
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\bin\Debug\net8.0\C-Sharp.pdb
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\C-Sharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\C-Sharp.AssemblyInfoInputs.cache
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\C-Sharp.AssemblyInfo.cs
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\C-Sharp.csproj.CoreCompileInputs.cache
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\C-Sharp.dll
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\refint\C-Sharp.dll
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\C-Sharp.pdb
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\C-Sharp.genruntimeconfig.cache
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\ref\C-Sharp.dll
