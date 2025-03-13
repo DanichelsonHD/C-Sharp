@@ -1,95 +1,90 @@
 using System;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Collections.Generic;
+using System.Globalization;
 
 namespace Module7
 {
-    public class Program : IExample, ISecondExample
+    class Program
     {
-        public static void Main7(string[] args)
+        private static void Main7()
         {
-            
-        }
-
-        public void Example()
-        {
-            Debug.WriteLine("Hello World");
-        }
-
-        public int Example2()
-        {
-            return 1;
-        }
-
-        public string Example3(string string1, string string2)
-        {
-            return string1 + " " + string2;
-        }
-    }
-
-    interface IExample
-    {
-        void Example();
-        int Example2();
-        string Example3(string string1, string string2);
-    }
-
-    interface ISecondExample {   }
-
-    public class Program2 : INotifyPropertyChanged, IComparable
-    {
-        public event PropertyChangedEventHandler? PropertyChanged;
-
-        public string Name
-        { 
-            get
+            /*
+            if((5 < 3) == true)
             {
-                return Name;
-            } 
-            set
-            {
-                Name = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Name));
+                PrintMessage("5 is less than 3");
             }
-        }
-        public int exampleLength;
-        Program2 ex1 = new Program2() { exampleLength = 2 };
+            else if(2 < 4)
+            {
+                PrintMessage("2 is less than 4");
 
-        public int CompareTo(object? obj)
-        {
-            Program2 ex2 = (Program2)obj;
-            if (ex1.exampleLength == ex2.exampleLength)
-            {
-                return 0;
-            } 
-            else if (ex1.exampleLength > ex2.exampleLength)
-            {
-                return 1;
-            } 
-            else
-            {
-                return -1;
             }
-        }
-    }
-    class Employee
-    {
-        public int id;
-    }
+            */        
+        
+            int day = 2;
 
-    class Program3 : IComparer
-    {
-        public static void Main(string[] args)
-        {
-            
+            switch(day)
+            {
+                case 1:
+                    PrintMessage("Sunday");
+                    break;
+                case 2:
+                    PrintMessage("Monday");
+                    break;
+                case 3:
+                    PrintMessage("Tuesday");
+                    break;
+                case 4:
+                    PrintMessage("Wednesday");
+                    break;
+                case 5:
+                    PrintMessage("Thursday");
+                    break;
+                case 6:
+                    PrintMessage("Friday");
+                    break;
+                case 7:
+                    PrintMessage("Saturday");
+                    break;
+                default:
+                    PrintMessage("Non Existent");
+                    break;
+            }
+
+            string forEx = "abc";
+            for(int i = 0; i < forEx.Length; i++)
+            {
+                PrintMessage(forEx[i].ToString());
+            }
+
+            for(int l = 0; l < 5; l++)
+            {
+                for(int j = 0; j < 5; j++)
+                {
+                    PrintMessage("l = " + l.ToString() + " j = " + j.ToString());
+                }
+            }
+
+            foreach(char s in "abc")
+            {
+                PrintMessage(s.ToString());
+            }
+
+            int I = 0;
+            do
+            {
+                PrintMessage(I.ToString());
+                I++;
+            } while(I < 5);
+
         }
 
-        public int Compare(object? x, object? y)
+        static void PrintMessage(string message)
+    {
         {
-            Employee employee1 = (Employee)x;
-            Employee employee2 = (Employee)y;
-            return employee1.id.CompareTo(employee2.id);
+            Console.WriteLine(message);
         }
     }
+    }   
 }

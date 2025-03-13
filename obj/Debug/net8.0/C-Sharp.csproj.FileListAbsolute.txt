@@ -12,3 +12,4 @@ C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\refint\C-Sharp
 C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\C-Sharp.pdb
 C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\C-Sharp.genruntimeconfig.cache
 C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\ref\C-Sharp.dll
+C:\Users\ldani\Documents\Estudos\C-Sharp\C-Sharp\obj\Debug\net8.0\C-Sharp.sourcelink.json

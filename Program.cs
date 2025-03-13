@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections;
+using Module11;
 
 namespace ExampleProj
 {
-    public class Program
-    {
-        public static void Main(string[] args)
+    class Program
+    {   
+        static void Main (string[] args)
         {
-            
-        }
 
+        }
     }
 }
