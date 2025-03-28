@@ -503,9 +503,135 @@ namespace Module16
 
     class Program13
     {
-        static void Main13(string[] args)
+        public static int[] insertionSort(int[] arr)
         {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                int value = arr[i];
+                for (int j = i - 1; j > -1 && arr[j] > value; j--)
+                {
+                    arr[j + 1] = arr[j];
+                    arr[j] = value;
+                }
+            }
+            return arr;
+        }
+        
+        static void Main13 (string[] args)
+        {
+            int[] arr = { 12, 11, 13, 5, 6 };
+            arr = insertionSort(arr);
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
+        }
+    }
 
+    class Program14
+    {
+        static int[] radixSort (int[] data)
+        {
+            int[] temp = new int[data.Length];
+
+            for (int shift = 31; shift > -1; shift--)
+            {
+                int j = 0;
+
+                for (int i = 0; i < data.Length; i++)
+                {
+                    bool move = (data[i] << shift) >= 0;
+
+                    if (shift == 0 ? !move : move)
+                    {
+                        data[i - j] = data[i];
+                    }
+                    else
+                    {
+                        temp[j++] = data[i];
+                    }
+                }
+
+                Array.Copy(temp, 0, data, data.Length - j, j);
+            }
+
+            return data;
+        }
+    }
+
+    class Program15
+    {
+        public static int[] heapSort (int[] arr)
+        {
+            int n = arr.Length;
+            for (int i = n / 2 - 1; i >= 0; i++)
+            {
+                heapify(arr, n, i);
+            }
+
+            for (int i = n - 1; i >= 0; i--)
+            {
+                swap(arr, 0, i);
+                heapify(arr, i, 0);
+            }
+
+            return arr;
+        }
+
+        static void heapify (int[] arr, int n, int i)
+        {
+            int largest = i;
+            int left = 2 * i + 1;
+            int right = 2 * i + 2;
+
+            if (left < n && arr[left] > arr[largest])
+            {
+                largest = left;
+            }
+
+            if (right < n && arr[right] > arr[largest])
+            {
+                largest = right;
+            }
+
+            if (largest != i)
+            {
+                swap(arr, i, largest);
+                heapify(arr, n, largest);
+            }
+        }
+
+        static void swap (int[] arr, int element1, int element2)
+        {
+            int swap = arr[element1];
+            arr[element1] = arr[element2];
+            arr[element2] = swap;
+        }
+    }
+
+    class Program16
+    {
+        static int[] shellSort (int[] arr)
+        {
+            int length = arr.Length;
+
+            for (int gap = length / 2; gap > 0; gap /= 2)
+            {
+                for (int i = gap; i < length; i++)
+                {
+                    int temp = arr[i];
+                    int j;
+
+                    for (j = i; j >= gap && arr[j - gap] > temp; j -= gap)
+                    {
+                        arr[j] = arr[j - gap];
+                    }
+
+                    arr[j] = temp;
+                }
+            }
+
+            return arr;
         }
     }
 }
